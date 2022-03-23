@@ -183,14 +183,15 @@ function whenJqReady() {
 	// page is now ready, initialize the calendar...
 	var calendarEl = document.getElementById('calendar');
 	var calendar = new FullCalendar.Calendar(calendarEl, {
-		plugins: [ 'interaction', 'dayGrid', 'rrule', 'moment', 'momentTimezone' ],	// docs on plugin names are wrong !!
+		plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'rrule', 'moment', 'momentTimezone' ],	// docs on plugin names are wrong !!
 		timeZone: calTimezone,	//	setting from config, default is 'local'
 		locale: LocaleCode,
 		weekNumbers: weekNums,
 		header: {
-			left: 'prevYear,nextYear',
-			center: 'title',
-		},
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay'
+    },
 		navLinks: false, // can click day/week names to navigate views
 		editable: false,
 		eventLimit: false, // allow "more" link when too many events

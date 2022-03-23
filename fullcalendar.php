@@ -59,8 +59,10 @@ class FullcalendarPlugin extends Plugin
 		$assets->addCss('plugins://' . $this->name . '/fc4/packages/core/main.css');
 		$assets->addJs('plugins://' . $this->name . '/fc4/packages/core/main.js', ['group' => 'bottom']);
 		$assets->addCss('plugins://' . $this->name . '/fc4/packages/daygrid/main.css');
+		$assets->addCss('plugins://' . $this->name . '/fc4/packages/timegrid/main.css');
 		$assets->addJs('plugins://' . $this->name . '/fc4/packages/interaction/main.js', ['group' => 'bottom']);
 		$assets->addJs('plugins://' . $this->name . '/fc4/packages/daygrid/main.js', ['group' => 'bottom']);
+		$assets->addJs('plugins://' . $this->name . '/fc4/packages/timegrid/main.js', ['group' => 'bottom']);
 		// timezone stuff:
 		/* test 29.12.21
 		*/
