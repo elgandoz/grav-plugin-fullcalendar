@@ -369,7 +369,7 @@ function whenJqReady() {
 								if (verbose) console.log('fcrrules:', fcrrules);
 							}
 						}
-						if(fcevents["color"] == null) { fcevents["backgroundColor"] = colors[index];}
+						if(fcevents["color"] == null) { fcevents["backgroundColor"] = fcevents["borderColor"] = colors[index]; }
 						if (verbose)	console.log('fcevents:', fcevents);
 						if (item.getFirstPropertyValue("class") === "PRIVATE") {
 							return null;
